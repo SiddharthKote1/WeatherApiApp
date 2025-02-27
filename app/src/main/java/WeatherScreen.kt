@@ -1,6 +1,4 @@
 import androidx.compose.foundation.layout.Column
-import androidx.compose.material3.Button
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.livedata.observeAsState
@@ -18,9 +16,7 @@ fun FirstScreen(modifier: Modifier, navController: NavController, authViewModel:
             else -> Unit
         }
     }
-    Column {
-        Button(onClick={}){
-            Text(text="Click on me")
-        }
+    Column(){
+
     }
 }
