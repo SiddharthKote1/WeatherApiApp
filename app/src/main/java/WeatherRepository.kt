@@ -8,3 +8,9 @@ class WeatherRepository(private val api: WeatherInterface) {
         return api.getWeather(location, unit = unit)
     }
 }
+
+
+
+
+
+

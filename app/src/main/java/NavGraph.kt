@@ -32,7 +32,9 @@ fun NavGraph(modifier: Modifier,authViewModel: AuthViewModel) {
                 Signin(modifier,navController,AuthViewModel())
             }
             composable("FirstScreen") {
-                FirstScreen(modifier,navController,AuthViewModel())
+                WeatherScreen(
+                    //modifier,navController,AuthViewModel()
+            )
             }
         })
 }
