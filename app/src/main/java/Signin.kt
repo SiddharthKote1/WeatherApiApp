@@ -11,6 +11,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TextFieldDefaults
@@ -69,33 +70,18 @@ fun Signin(modifier:Modifier,navController: NavController,authViewModel: AuthVie
         OutlinedTextField(value = email,
             onValueChange = { email = it },
             shape = RoundedCornerShape(12.dp),
-
-            colors= TextFieldDefaults.outlinedTextFieldColors(
-                focusedBorderColor = Color.White,
-                unfocusedBorderColor = Color.White,
-                focusedTextColor = Color.Black),
             label = { Text(text = "Enter the email") }
         )
         Spacer(modifier = Modifier.height(15.dp))
         OutlinedTextField(value = password,
             onValueChange = { password = it },
             shape = RoundedCornerShape(12.dp),
-
-            colors= TextFieldDefaults.outlinedTextFieldColors(
-                focusedBorderColor = Color.White,
-                unfocusedBorderColor = Color.White,
-                focusedTextColor = Color.Black),
             label = { Text(text = "Enter password") }
         )
         Spacer(modifier = Modifier.height(15.dp))
         OutlinedTextField(value = repassword,
             onValueChange = { repassword = it },
             shape = RoundedCornerShape(12.dp),
-
-            colors= TextFieldDefaults.outlinedTextFieldColors(
-                focusedBorderColor = Color.White,
-                unfocusedBorderColor = Color.White,
-                focusedTextColor = Color.Black),
             label = { Text(text = "Re enter password") }
         )
         Spacer(modifier = Modifier.height(15.dp))

@@ -76,21 +76,12 @@ fun Login(modifier:Modifier,navController: NavController,authViewModel: AuthView
         OutlinedTextField(value = email,
             onValueChange = { email = it },
             shape = RoundedCornerShape(12.dp),
-            colors= TextFieldDefaults.outlinedTextFieldColors(
-                focusedBorderColor = Color.White,
-                unfocusedBorderColor = Color.White,
-                focusedTextColor = Color.Black
-            ),
             label = { Text(text = "Enter the email") }
         )
         Spacer(modifier = Modifier.height(15.dp))
         OutlinedTextField(value = password,
             onValueChange = { password = it },
             shape = RoundedCornerShape(12.dp),
-            colors= TextFieldDefaults.outlinedTextFieldColors(
-                focusedBorderColor = Color.White,
-                unfocusedBorderColor = Color.White,
-                focusedTextColor = Color.Black),
             label = { Text(text = "Enter the Password") }
         )
         Spacer(modifier = Modifier.height(15.dp))
