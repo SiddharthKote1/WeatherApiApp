@@ -12,13 +12,14 @@ class WeatherViewModel : ViewModel() {
     fun fetchWeather(city:String,apiKey:String){
         viewModelScope.launch {
             try{
-                val response = weatherApi.getWeather(city,apiKey)
+                val response = weatherApi.getWeather(city)
                 _weatherData.value=response
             }
             catch (
                 e:Exception
             ) {
                 e.printStackTrace()
+                _weatherData.value=null
             }
         }
     }

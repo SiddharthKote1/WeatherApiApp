@@ -98,7 +98,7 @@ Image(painter= painterResource(R.drawable.anime),
                 Row(modifier=Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.Start){
                     WeatherCard(label="Humidity",value="${it.main.humidity}%",icon=Icons.Default.Warning)
-                    WeatherCard(label="Description",value="${it.weather[0].description}%",icon=Icons.Default.Info)
+                    WeatherCard(label="Description",value="${it.weather[0].description}",icon=Icons.Default.Info)
                 }
             }
         }
@@ -137,7 +137,7 @@ fun WeatherCard(label:String,value:String,icon: ImageVector){
                     text = value,
                     fontSize = 22.sp,
                     fontWeight = FontWeight.Bold,
-                    textAlign = TextAlign.Center // Correct usage
+                    textAlign = TextAlign.Center
                 )
             }
             }
